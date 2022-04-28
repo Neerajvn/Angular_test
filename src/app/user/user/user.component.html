@@ -1,0 +1,34 @@
+<div  class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>Enter Your Details</h2>
+        </div>
+        <form [formGroup]="detailsForm" (ngSubmit)="submit()"  >
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input class="form-control" matInput  formControlName="name" name="name" placeholder="Enter Your Name">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input class="form-control" matInput formControlName="email" name="email" placeholder="Enter Your Email">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Phone</mat-label>
+                    <input class="form-control" matInput formControlName="phone" name="phone" placeholder="Enter Your Phone Number">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </p>
+            <button mat-raised-button value="submit" color="primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+

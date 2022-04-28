@@ -1,0 +1,33 @@
+
+
+<div class="container">
+    <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+       
+        <ng-container matColumnDef="id">
+            <th mat-header-cell mat-sort-header *matHeaderCellDef> <h4>ID</h4> </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+        <ng-container matColumnDef="login">
+            <th mat-header-cell  mat-sort-header *matHeaderCellDef> <h4>LOGIN</h4> </th>
+            <td mat-cell *matCellDef="let element"> {{element.login}} </td>
+        </ng-container>
+        <ng-container matColumnDef="avatar_url">
+            <th mat-header-cell *matHeaderCellDef> <h4>AVATAR URL</h4></th>
+            <td mat-cell *matCellDef="let element"> <a>{{element.avatar_url}}</a> </td>
+        </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        
+
+    </table>
+    <mat-paginator #paginator
+              [pageSize]="5"
+              [pageSizeOptions]="[5, 10,25,50]"
+              aria-label="Select page">
+</mat-paginator>
+
+
+</div>

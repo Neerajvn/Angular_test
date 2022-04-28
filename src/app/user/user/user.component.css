@@ -1,0 +1,40 @@
+.card{
+    position: absolute;
+    height: 383px;
+    margin-left: 414px;
+    margin-top: 115px;
+    margin-bottom: auto;
+    width: 382px;
+    background-color: rgba(224, 222, 231, 0.479) !important;
+    }
+    .card-header h3{
+        color: #7fffd4;
+        
+    }
+    .container{
+        height: 45%;
+        align-content: center;
+    
+    }
+    .card-header{
+        position: relative;
+        width: 100%;
+        
+        align-content: center;
+    }
+    .mat-form-field{
+        width: 380px;
+    }
+    .mat-raised-button{
+        margin-top: 10px;
+        margin-left: 292px;
+    }
+    h2{
+        text-align: center;
+        margin-top: 14px;
+    }
+    .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+    
